@@ -19,12 +19,12 @@
             document.addEventListener('keyup', upHandle);
 
             function downpressHandle(key) {
-                if (key.keyCode === 37) {
+                if (key.key === "ArrowLeft") {
                     rotationDirection = 'left';
                     keyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
-                if (key.keyCode === 39) {
+                if (key.key === "ArrowRight") {
                     rotationDirection = 'right';
                     keyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
