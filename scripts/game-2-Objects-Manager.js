@@ -49,22 +49,22 @@
             document.addEventListener('keyup', upHandle);
 
             function downpressHandle(key) {
-                if (key.keyCode === 38) {
+                if (key.key === "ArrowUp") {
                     isUpArrowKeyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
-                if (key.keyCode === 40) {
+                if (key.key === "ArrowDown") {
                     isDownArowKeyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
             }
 
             function upHandle(key) {
-                if (key.keyCode === 38) {
+                if (key.key === "ArrowUp") {
                     isUpArrowKeyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
-                if (key.keyCode === 40) {
+                if (key.key === "ArrowDown") {
                     isDownArowKeyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
