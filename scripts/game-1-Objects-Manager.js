@@ -79,10 +79,10 @@
         value: function (game) {
             ball = game.gameObjects[0];
 
-            if (ball.xCoordinate < constants.GAME1_BALL_MIN_X || ball.xCoordinate > constants.GAME1_BALL_MAX_X) {
+            /*if (ball.xCoordinate < constants.GAME1_BALL_MIN_X || ball.xCoordinate > constants.GAME1_BALL_MAX_X) {
                 // Uncomment this line to enable game over condition
                  game.over = true;
-            }
+            }*/
         }
     });
 
