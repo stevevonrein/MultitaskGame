@@ -32,11 +32,11 @@
             }
 
             function upHandle(key) {
-                if (key.keyCode === 37) {
+                if (key.key === "ArrowLeft") {
                     keyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
-                if (key.keyCode === 39) {
+                if (key.key === "ArrowRight") {
                     keyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
