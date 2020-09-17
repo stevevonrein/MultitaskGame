@@ -2350,7 +2350,7 @@ module.exports = (function () {
     function onScoreButtonClicked() {
         scoreButton.removeEventListener('click', onScoreButtonClicked);
         scoreButton.className = 'hidden';
-        window.location.reload(true);
+        //window.location.reload(true);
     }
 
     function onGameOver() {
