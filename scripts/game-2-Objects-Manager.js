@@ -120,9 +120,9 @@
                 return sat.testPolygonPolygon(obstacle.collisionProfile, player.shape.collisionProfile);
             });
 
-            if (collisionHappened) {
+            /*if (collisionHappened) {
                 game.over = true;
-            }
+            }*/
         }
     });
 
