@@ -991,10 +991,10 @@ module.exports = function () {
         playButton = document.getElementById('play-button');
 
     function onClickPlayButton() {
-        playButton.removeEventListener('click', onClickPlayButton);
+        //playButton.removeEventListener('click', onClickPlayButton);
 
         parentContainer.className = 'table';
-        playButton.className = 'hidden';
+        //playButton.className = 'hidden';
 
         games = initializator.initiateGames();
         engine.runGames(games);
