@@ -2341,7 +2341,7 @@ module.exports = (function () {
         parentContainer = document.getElementById('game-table'),
         
         
-        = 0,
+        score = 0,
         scoreInterval = setInterval(changeScore, 1000),
         scoreButton = document.getElementById('score-button');
 
