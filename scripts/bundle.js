@@ -2339,7 +2339,9 @@ module.exports = (function () {
         gameOver = false,
         restart = require('./application.js'),
         parentContainer = document.getElementById('game-table'),
-        score = 0,
+        
+        
+        = 0,
         scoreInterval = setInterval(changeScore, 1000),
         scoreButton = document.getElementById('score-button');
 
@@ -2348,8 +2350,10 @@ module.exports = (function () {
     }
 
     function onScoreButtonClicked() {
-        scoreButton.removeEventListener('click', onScoreButtonClicked);
+        //scoreButton.removeEventListener('click', onScoreButtonClicked);
         scoreButton.className = 'hidden';
+      games = initializator.initiateGames();
+        engine.runGames(games);
         //window.location.reload(true);
     }
 
