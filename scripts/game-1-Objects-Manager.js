@@ -67,16 +67,10 @@
                 }
             }
             else {
-                //if (rotationDirection === 'left') {
                     game.boardRotationAngle +=
                         (rotationDirection === 'left'?-1:1)*(constants.GAME1_ROTATION_ANGLE_STEP_WHEN_PRESSED
                         - Math.abs(ballXCoord - constants.GAME1_BALL_START_X) / constants.GAME1_ROT_ANGLE_STEP_MODIFIER_WHEN_PRESSED);
-                //}
-                /*else if (rotationDirection === 'right') {
-                    game.boardRotationAngle +=
-                        constants.GAME1_ROTATION_ANGLE_STEP_WHEN_PRESSED
-                        - Math.abs(ballXCoord - constants.GAME1_BALL_START_X) / constants.GAME1_ROT_ANGLE_STEP_MODIFIER_WHEN_PRESSED;
-                }*/
+
             }
         }
     });
