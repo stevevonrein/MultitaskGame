@@ -1245,10 +1245,10 @@ module.exports = (function (parent) {
         value: function (game) {
             ball = game.gameObjects[0];
 
-            if (ball.xCoordinate < constants.GAME1_BALL_MIN_X || ball.xCoordinate > constants.GAME1_BALL_MAX_X) {
+            /*if (ball.xCoordinate < constants.GAME1_BALL_MIN_X || ball.xCoordinate > constants.GAME1_BALL_MAX_X) {
                 // Uncomment this line to enable game over condition
                  game.over = true;
-            }
+            }*/
         }
     });
 
@@ -1469,9 +1469,9 @@ module.exports = (function (parent) {
                 return sat.testPolygonPolygon(obstacle.collisionProfile, player.shape.collisionProfile);
             });
 
-            if (collisionHappened) {
+            /*if (collisionHappened) {
                 game.over = true;
-            }
+            }*/
         }
     });
 
