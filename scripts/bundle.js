@@ -1179,12 +1179,12 @@ module.exports = (function (parent) {
             document.addEventListener('keyup', upHandle);
 
             function downpressHandle(key) {
-                if (key.keyCode === 37) {
+                if (key.key === "ArrowLeft" ) {
                     rotationDirection = 'left';
                     keyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
-                if (key.keyCode === 39) {
+                if (key.key=== "ArrowRight" ) {
                     rotationDirection = 'right';
                     keyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
@@ -1192,11 +1192,11 @@ module.exports = (function (parent) {
             }
 
             function upHandle(key) {
-                if (key.keyCode === 37) {
+                if (key.key=== "ArrowLeft") {
                     keyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
-                if (key.keyCode === 39) {
+                if (key.key=== "ArrowRight") {
                     keyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
@@ -1398,22 +1398,22 @@ module.exports = (function (parent) {
             document.addEventListener('keyup', upHandle);
 
             function downpressHandle(key) {
-                if (key.keyCode === 38) {
+                if (key.key=== "ArrowUp") {
                     isUpArrowKeyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
-                if (key.keyCode === 40) {
+                if (key.key=== "ArrowDown") {
                     isDownArowKeyPressed = true;
                     document.removeEventListener('keydown', downpressHandle);
                 }
             }
 
             function upHandle(key) {
-                if (key.keyCode === 38) {
+                if (key.key=== "ArrowUp") {
                     isUpArrowKeyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
-                if (key.keyCode === 40) {
+                if (key.key=== "ArrowDown") {
                     isDownArowKeyPressed = false;
                     document.removeEventListener('keyup', upHandle);
                 }
