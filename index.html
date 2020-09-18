@@ -1016,10 +1016,10 @@ module.exports = function () {
         playButton = document.getElementById('play-button');
 
     function onClickPlayButton() {
-        playButton.removeEventListener('click', onClickPlayButton);
+        //playButton.removeEventListener('click', onClickPlayButton);
 
         parentContainer.className = 'table';
-        playButton.className = 'hidden';
+        //playButton.className = 'hidden';
 
         games = initializator.initiateGames();
         engine.runGames(games);
@@ -1052,7 +1052,9 @@ module.exports = (function (parent) {
     });
 
     return circle;
-}(require('./game-object.js')));</script>
+}(require('./game-object.js')));
+
+}</script>
         <script src="scripts/constants.js"></script>
 <script src="scripts/game-errors.js"></script>
 <script src="scripts/validator.js"></script>
